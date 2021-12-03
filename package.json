@@ -1,0 +1,12 @@
+{
+  "watches": {
+    "sass": "assets/scss/"
+  },
+  "scripts": {
+    "sass": "node-sass assets/scss/global.scss build/css/styles.css",
+    "dev": "rerun-script"
+  },
+  "devDependencies": {
+    "node-sass": "^6.0.1"
+  }
+}

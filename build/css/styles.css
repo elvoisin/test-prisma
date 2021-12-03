@@ -1,0 +1,172 @@
+.header {
+  position: relative; }
+  .header__navbar {
+    display: none;
+    position: fixed;
+    flex-direction: column;
+    padding-top: 40px;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    z-index: 1; }
+    .header__navbar.active {
+      display: flex; }
+    @media screen and (min-width: 780px) {
+      .header__navbar {
+        display: flex; } }
+    .header__navbar__toggle {
+      padding: 10px;
+      background-color: rgba(0, 0, 0, 0.7);
+      cursor: pointer;
+      position: fixed;
+      top: 10px;
+      right: 10px;
+      z-index: 1; }
+    .header__navbar__close {
+      cursor: pointer;
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      z-index: 3; }
+    @media screen and (min-width: 780px) {
+      .header__navbar {
+        height: 55px;
+        justify-content: space-evenly;
+        flex-direction: row;
+        padding-top: 0; }
+        .header__navbar__toggle, .header__navbar__close {
+          display: none; } }
+    .header__navbar__item {
+      padding-top: 15px;
+      vertical-align: middle;
+      text-decoration: none;
+      text-transform: uppercase;
+      color: #fff;
+      text-align: center;
+      margin-bottom: 20px; }
+      @media screen and (min-width: 780px) {
+        .header__navbar__item {
+          margin-bottom: 0; } }
+  .header__logo {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 80%;
+    transform: translate(-50%, -50%);
+    text-align: center; }
+
+.footer {
+  display: block;
+  position: relative;
+  color: #9B9B9B;
+  z-index: 1;
+  padding-top: 100px; }
+  .footer__item {
+    text-align: center; }
+    .footer__item__follow {
+      margin-top: 30px;
+      display: flex;
+      align-items: center; }
+      @media screen and (min-width: 780px) {
+        .footer__item__follow {
+          display: block;
+          margin-top: 0; } }
+      .footer__item__follow img {
+        margin-right: 10px; }
+      .footer__item__follow__title {
+        margin-right: 10px;
+        width: 100%;
+        text-transform: uppercase; }
+        @media screen and (min-width: 780px) {
+          .footer__item__follow__title {
+            display: block;
+            margin-bottom: 20px; } }
+    .footer__item a {
+      display: block;
+      padding: 5px 0;
+      color: #9B9B9B; }
+  .footer__container {
+    display: flex;
+    margin-top: 20px;
+    align-items: stretch;
+    justify-content: space-around;
+    flex-wrap: wrap; }
+  .footer__background {
+    display: block;
+    position: absolute;
+    background-color: #181818;
+    width: 100%;
+    z-index: -1;
+    top: 0;
+    left: 0; }
+    .footer__background img {
+      display: block;
+      margin: auto;
+      height: 400px; }
+
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 15px;
+  font-family: Arial; }
+
+.container {
+  width: 80%;
+  margin: auto;
+  font-size: 17px; }
+  @media screen and (min-width: 780px) {
+    .container {
+      display: flex;
+      align-items: stretch;
+      max-width: 1200px;
+      min-width: 600px;
+      padding: 0 20px; } }
+  .container--full {
+    flex-direction: column; }
+  .container__pub {
+    padding: 20px; }
+    .container__pub img {
+      position: sticky;
+      top: 75px;
+      text-align: center; }
+
+.image-background {
+  display: block;
+  position: relative;
+  width: 100%;
+  z-index: 0; }
+  .image-background-image {
+    position: absolute;
+    top: 0; }
+  .image-background img {
+    width: 100%; }
+
+.text-h2 {
+  font-size: 20px; }
+
+.text-center {
+  text-align: center; }
+
+.text-center--mobile {
+  text-align: center; }
+  @media screen and (min-width: 780px) {
+    .text-center--mobile {
+      text-align: left; } }
+
+.text-image {
+  width: 100%; }
+  @media screen and (min-width: 780px) {
+    .text-image {
+      float: left;
+      width: auto;
+      padding: 20px 20px 0 0; } }
+
+.display-desktop {
+  display: none; }
+  @media screen and (min-width: 780px) {
+    .display-desktop {
+      display: block; } }

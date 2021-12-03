@@ -1,0 +1,67 @@
+.header {
+  position: relative;
+  &__navbar {
+    display: none;
+    position: fixed;
+    flex-direction: column;
+    padding-top: 40px;
+    top: 0; left: 0;
+    background-color: rgba(0,0,0,0.7);
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    z-index: 1;
+    &.active {
+      display: flex;
+    }
+    @media screen and ($desktop) {
+      display: flex;
+    }
+    &__toggle {
+      padding: 10px;
+      background-color: rgba(0,0,0,0.7);
+      cursor: pointer;
+      position: fixed;
+      top: 10px;
+      right: 10px;
+      z-index: 1;
+    }
+    &__close {
+      cursor: pointer;
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      z-index: 3;
+    }
+    @media screen and ($desktop) {
+      height: 55px;
+      justify-content: space-evenly;
+      flex-direction: row;
+      padding-top: 0;
+      &__toggle, &__close {
+        display: none;
+      }
+    }
+    &__item {
+      padding-top: 15px;
+      vertical-align: middle;
+      text-decoration: none;
+      text-transform: uppercase;
+      color: #fff;
+      text-align: center;
+      margin-bottom: 20px;
+      @media screen and ($desktop) {
+        margin-bottom: 0;
+      }
+    }
+  }
+  &__logo {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 80%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+}

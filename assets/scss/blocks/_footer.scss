@@ -1,0 +1,57 @@
+.footer {
+  display: block;
+  position: relative;
+  color: #9B9B9B;
+  z-index: 1;
+  padding-top: 100px;
+  &__item {
+    text-align: center;
+    &__follow {
+      margin-top: 30px;
+      display: flex;
+      align-items: center;
+      @media screen and ($desktop) {
+        display: block;
+        margin-top: 0;
+      }
+      img {
+        margin-right: 10px;
+      }
+      &__title {
+        margin-right: 10px;
+        @media screen and ($desktop) {
+          display: block;
+          margin-bottom: 20px;
+        }
+        width: 100%;
+        text-transform: uppercase;
+      }
+    }
+    a {
+      display: block;
+      padding: 5px 0;
+      color: #9B9B9B;
+    }
+  }
+  &__container {
+    display: flex;
+    margin-top: 20px;
+    align-items: stretch;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  &__background {
+    display: block;
+    position: absolute;
+    background-color: #181818;
+    width: 100%;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    img {
+      display: block;
+      margin: auto;
+      height: 400px;
+    }
+  }
+}
